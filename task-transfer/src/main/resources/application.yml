@@ -1,0 +1,24 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+  profiles:
+    active: ${profile.active}
+
+# MULTIPART (MultipartProperties)
+  http:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 20MB
+
+server:
+  context-path: /task/
+jasypt:
+  encryptor:
+    bean: encryptorBean
+
+checklogin:
+  need:
+    binding:
+      sicard: "no" #不加双引号或单引号会自动转译成false
+      
+publickey.cert.name: SSO_test.cer

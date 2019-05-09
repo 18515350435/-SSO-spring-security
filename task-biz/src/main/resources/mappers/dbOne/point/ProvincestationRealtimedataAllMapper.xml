@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.point.ProvincestationRealtimedataAllMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.point.ProvincestationRealtimedataAll">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="point_id" jdbcType="VARCHAR" property="pointId" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="max_poll" jdbcType="VARCHAR" property="maxPoll" />
+    <result column="data_time" jdbcType="VARCHAR" property="dataTime" />
+    <result column="aqi" jdbcType="DECIMAL" property="aqi" />
+    <result column="so2" jdbcType="DECIMAL" property="so2" />
+    <result column="no2" jdbcType="DECIMAL" property="no2" />
+    <result column="co" jdbcType="DECIMAL" property="co" />
+    <result column="o3_1h" jdbcType="DECIMAL" property="o31h" />
+    <result column="o3_8h" jdbcType="DECIMAL" property="o38h" />
+    <result column="pm25" jdbcType="DECIMAL" property="pm25" />
+    <result column="pm10" jdbcType="DECIMAL" property="pm10" />
+    <result column="inster_time" jdbcType="VARCHAR" property="insterTime" />
+  </resultMap>
+  <select id="getShenZhouData" parameterType="java.lang.String" resultType="com.zc.api.model.resp.shenzhou.ShenZhouData">
+SELECT HOUR(a.data_time) time,avg(a.pm25)pm25,avg(a.pm10)pm10,avg(a.so2)so2,avg(a.no2)no2,avg(a.co)co,avg(a.o3_1h)o31,avg(a.o3_8h) o38,p.`name`
+            from provincestation_realtimedata_all a
+            INNER JOIN point_info p
+            on a.point_id=p.id and (p.id="38115.559" or p.id="38115.743")
+            where a.data_time BETWEEN #{startTime,jdbcType=VARCHAR}
+            and #{endTime,jdbcType=VARCHAR}
+            GROUP BY `name`,HOUR(a.data_time)
+  </select>
+</mapper>

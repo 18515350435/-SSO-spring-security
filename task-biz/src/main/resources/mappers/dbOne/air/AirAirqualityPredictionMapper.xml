@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.air.AirAirqualityPredictionMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.air.AirAirqualityPrediction">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="Name" jdbcType="VARCHAR" property="name" />
+    <result column="CityCode" jdbcType="VARCHAR" property="citycode" />
+    <result column="AirIndex_From" jdbcType="VARCHAR" property="airindexFrom" />
+    <result column="AirIndex_To" jdbcType="VARCHAR" property="airindexTo" />
+    <result column="PrimaryPollutant" jdbcType="VARCHAR" property="primarypollutant" />
+    <result column="DetailInfo" jdbcType="VARCHAR" property="detailinfo" />
+    <result column="Longitude" jdbcType="VARCHAR" property="longitude" />
+    <result column="Latitude" jdbcType="VARCHAR" property="latitude" />
+    <result column="Air48Index_From" jdbcType="VARCHAR" property="air48indexFrom" />
+    <result column="Air48Index_To" jdbcType="VARCHAR" property="air48indexTo" />
+    <result column="Primary48Pollutant" jdbcType="VARCHAR" property="primary48pollutant" />
+    <result column="Air72Index_From" jdbcType="VARCHAR" property="air72indexFrom" />
+    <result column="Air72Index_To" jdbcType="VARCHAR" property="air72indexTo" />
+    <result column="Primary72Pollutant" jdbcType="VARCHAR" property="primary72pollutant" />
+    <result column="inster_time" jdbcType="VARCHAR" property="insterTime" />
+  </resultMap>
+</mapper>

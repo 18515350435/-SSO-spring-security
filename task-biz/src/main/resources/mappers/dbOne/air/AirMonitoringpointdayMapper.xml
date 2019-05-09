@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.air.AirMonitoringpointdayMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.air.AirMonitoringpointday">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="pointid" jdbcType="VARCHAR" property="pointid" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="aqi" jdbcType="INTEGER" property="aqi" />
+    <result column="pm2_5" jdbcType="INTEGER" property="pm25" />
+    <result column="pm10" jdbcType="INTEGER" property="pm10" />
+    <result column="so2" jdbcType="INTEGER" property="so2" />
+    <result column="no2" jdbcType="INTEGER" property="no2" />
+    <result column="co" jdbcType="DOUBLE" property="co" />
+    <result column="o3_8h" jdbcType="INTEGER" property="o38h" />
+    <result column="AQIStatus" jdbcType="CHAR" property="aqistatus" />
+    <result column="PM25Status" jdbcType="CHAR" property="pm25status" />
+    <result column="PM10Status" jdbcType="CHAR" property="pm10status" />
+    <result column="SO2Status" jdbcType="CHAR" property="so2status" />
+    <result column="NO2Status" jdbcType="CHAR" property="no2status" />
+    <result column="COStatus" jdbcType="CHAR" property="costatus" />
+    <result column="O3Status" jdbcType="CHAR" property="o3status" />
+    <result column="complexindex" jdbcType="DOUBLE" property="complexindex" />
+    <result column="primary_pollutant" jdbcType="VARCHAR" property="primaryPollutant" />
+    <result column="Id" jdbcType="LONGVARCHAR" property="id" />
+  </resultMap>
+</mapper>

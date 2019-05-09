@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.cases.HjwfBusCaseattachMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.cases.HjwfBusCaseattach">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="CaseType" jdbcType="VARCHAR" property="casetype" />
+    <result column="FK_AttachType" jdbcType="VARCHAR" property="fkAttachtype" />
+    <result column="AttachName" jdbcType="VARCHAR" property="attachname" />
+    <result column="Attachment" jdbcType="VARCHAR" property="attachment" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updatedate" />
+    <result column="DataSource" jdbcType="VARCHAR" property="datasource" />
+    <result column="DeleteFlag" jdbcType="INTEGER" property="deleteflag" />
+    <result column="TimeTamp" jdbcType="TIMESTAMP" property="timetamp" />
+    <result column="Creater" jdbcType="VARCHAR" property="creater" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="Modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="ModifyTime" jdbcType="DATE" property="modifytime" />
+  </resultMap>
+</mapper>

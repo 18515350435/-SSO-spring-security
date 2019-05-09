@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.cases.PubCodeDepartmenttypeMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.cases.PubCodeDepartmenttype">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="Code" jdbcType="VARCHAR" property="code" />
+    <result column="Name" jdbcType="VARCHAR" property="name" />
+    <result column="Comment" jdbcType="VARCHAR" property="comment" />
+    <result column="Leader" jdbcType="VARCHAR" property="leader" />
+    <result column="Contacts" jdbcType="VARCHAR" property="contacts" />
+    <result column="Status" jdbcType="BIT" property="status" />
+  </resultMap>
+</mapper>

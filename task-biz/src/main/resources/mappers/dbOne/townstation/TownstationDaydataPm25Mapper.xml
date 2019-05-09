@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.townstation.TownstationDaydataPm25Mapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.townstation.TownstationDaydataPm25">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="pm25num" jdbcType="VARCHAR" property="pm25num" />
+    <result column="pm25title" jdbcType="VARCHAR" property="pm25title" />
+    <result column="pm25aid" jdbcType="VARCHAR" property="pm25aid" />
+    <result column="pm25aname" jdbcType="VARCHAR" property="pm25aname" />
+    <result column="pm25" jdbcType="VARCHAR" property="pm25" />
+    <result column="pm25level" jdbcType="VARCHAR" property="pm25level" />
+    <result column="pm25date" jdbcType="VARCHAR" property="pm25date" />
+    <result column="maxdate" jdbcType="VARCHAR" property="maxdate" />
+    <result column="insertdate" jdbcType="VARCHAR" property="insertdate" />
+  </resultMap>
+  <insert id="insertByBatch" parameterType="java.util.List" >
+    INSERT INTO `townstation_daydata_pm25` (`id`, `pm25num`, `pm25title`, `pm25aid`, `pm25aname`, `pm25`, `pm25level`, `pm25date`, `maxdate`,`insertdate`)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (#{item.id,jdbcType=VARCHAR},
+      #{item.pm25num,jdbcType=VARCHAR},
+      #{item.pm25title,jdbcType=VARCHAR},
+      #{item.pm25aid,jdbcType=VARCHAR},
+      #{item.pm25aname,jdbcType=VARCHAR},
+      #{item.pm25,jdbcType=VARCHAR},
+      #{item.pm25level,jdbcType=VARCHAR},
+      #{item.pm25date,jdbcType=VARCHAR},
+      #{item.maxdate,jdbcType=VARCHAR},
+      #{item.insertdate,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
+</mapper>

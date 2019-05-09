@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.BaseGridLevelOneMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.BaseGridLevelOne">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="grid_name" jdbcType="VARCHAR" property="gridName" />
+    <result column="grid_code" jdbcType="VARCHAR" property="gridCode" />
+  </resultMap>
+</mapper>

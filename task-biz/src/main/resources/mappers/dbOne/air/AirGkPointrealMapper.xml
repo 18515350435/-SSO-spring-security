@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.air.AirGkPointrealMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.air.AirGkPointreal">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="StationCode" jdbcType="VARCHAR" property="stationcode" />
+    <result column="PubDateTime" jdbcType="TIMESTAMP" property="pubdatetime" />
+    <result column="AQI" jdbcType="INTEGER" property="aqi" />
+    <result column="PM2_5" jdbcType="INTEGER" property="pm25" />
+    <result column="PM2_5_24h" jdbcType="INTEGER" property="pm2524h" />
+    <result column="PM10" jdbcType="INTEGER" property="pm10" />
+    <result column="PM10_24h" jdbcType="INTEGER" property="pm1024h" />
+    <result column="SO2" jdbcType="INTEGER" property="so2" />
+    <result column="SO2_24h" jdbcType="INTEGER" property="so224h" />
+    <result column="NO2" jdbcType="INTEGER" property="no2" />
+    <result column="NO2_24h" jdbcType="INTEGER" property="no224h" />
+    <result column="O3" jdbcType="INTEGER" property="o3" />
+    <result column="O3_24h" jdbcType="INTEGER" property="o324h" />
+    <result column="O3_8h" jdbcType="INTEGER" property="o38h" />
+    <result column="O3_8h_24h" jdbcType="INTEGER" property="o38h24h" />
+    <result column="CO" jdbcType="DECIMAL" property="co" />
+    <result column="CO_24h" jdbcType="DECIMAL" property="co24h" />
+    <result column="PrimaryPollution" jdbcType="VARCHAR" property="primarypollution" />
+    <result column="Quality" jdbcType="VARCHAR" property="quality" />
+    <result column="ComplexIndex" jdbcType="DECIMAL" property="complexindex" />
+  </resultMap>
+</mapper>

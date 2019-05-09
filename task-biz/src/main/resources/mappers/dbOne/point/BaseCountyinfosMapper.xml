@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.point.BaseCountyinfosMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.point.BaseCountyinfos">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="areaname" jdbcType="VARCHAR" property="areaname" />
+    <result column="areacode" jdbcType="VARCHAR" property="areacode" />
+    <result column="cityname" jdbcType="VARCHAR" property="cityname" />
+    <result column="citycode" jdbcType="VARCHAR" property="citycode" />
+    <result column="provincename" jdbcType="VARCHAR" property="provincename" />
+    <result column="provincecode" jdbcType="VARCHAR" property="provincecode" />
+  </resultMap>
+</mapper>

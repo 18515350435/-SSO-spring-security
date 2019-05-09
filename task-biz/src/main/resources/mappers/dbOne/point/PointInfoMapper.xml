@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.point.PointInfoMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.point.PointInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="longitude" jdbcType="DOUBLE" property="longitude" />
+    <result column="latitude" jdbcType="DECIMAL" property="latitude" />
+    <result column="district_county" jdbcType="VARCHAR" property="districtCounty" />
+    <result column="pointtype" jdbcType="VARCHAR" property="pointtype" />
+    <result column="areaid" jdbcType="VARCHAR" property="areaid" />
+  </resultMap>
+</mapper>

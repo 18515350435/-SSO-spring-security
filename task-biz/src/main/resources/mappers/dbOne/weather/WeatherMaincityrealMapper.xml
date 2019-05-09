@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.weather.WeatherMaincityrealMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.weather.WeatherMaincityreal">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="cityName" jdbcType="VARCHAR" property="cityname" />
+    <result column="Id" jdbcType="INTEGER" property="id" />
+    <result column="publishTime" jdbcType="TIMESTAMP" property="publishtime" />
+    <result column="temperature" jdbcType="DOUBLE" property="temperature" />
+    <result column="humidity" jdbcType="DOUBLE" property="humidity" />
+    <result column="rain" jdbcType="DOUBLE" property="rain" />
+    <result column="weather" jdbcType="VARCHAR" property="weather" />
+    <result column="wind_direct" jdbcType="VARCHAR" property="windDirect" />
+    <result column="wind_speed" jdbcType="DOUBLE" property="windSpeed" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="countyCode" jdbcType="VARCHAR" property="countycode" />
+    <result column="cityCode" jdbcType="VARCHAR" property="citycode" />
+    <result column="provinceCode" jdbcType="VARCHAR" property="provincecode" />
+  </resultMap>
+</mapper>

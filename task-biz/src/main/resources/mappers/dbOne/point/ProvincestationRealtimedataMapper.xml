@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.point.ProvincestationRealtimedataMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.point.ProvincestationRealtimedata">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="point_id" jdbcType="VARCHAR" property="pointId" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="max_poll" jdbcType="VARCHAR" property="maxPoll" />
+    <result column="data_time" jdbcType="VARCHAR" property="dataTime" />
+    <result column="aqi" jdbcType="DECIMAL" property="aqi" />
+    <result column="so2" jdbcType="DECIMAL" property="so2" />
+    <result column="no2" jdbcType="DECIMAL" property="no2" />
+    <result column="co" jdbcType="DECIMAL" property="co" />
+    <result column="o3_1h" jdbcType="DECIMAL" property="o31h" />
+    <result column="o3_8h" jdbcType="DECIMAL" property="o38h" />
+    <result column="pm25" jdbcType="DECIMAL" property="pm25" />
+    <result column="pm10" jdbcType="DECIMAL" property="pm10" />
+    <result column="inster_time" jdbcType="VARCHAR" property="insterTime" />
+  </resultMap>
+</mapper>

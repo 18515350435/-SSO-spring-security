@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.sys.SysTvocindexinfoMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.sys.SysTvocindexinfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="y" jdbcType="VARCHAR" property="y" />
+    <result column="l" jdbcType="VARCHAR" property="l" />
+    <result column="qd" jdbcType="VARCHAR" property="qd" />
+    <result column="zd" jdbcType="VARCHAR" property="zd" />
+    <result column="zhd" jdbcType="VARCHAR" property="zhd" />
+    <result column="yz" jdbcType="VARCHAR" property="yz" />
+    <result column="inserttime" jdbcType="TIMESTAMP" property="inserttime" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+  </resultMap>
+</mapper>

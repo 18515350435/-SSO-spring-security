@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbTwo.TDemoMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbTwo.TDemo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="demo_id" jdbcType="INTEGER" property="demoId" />
+    <result column="demo_name" jdbcType="VARCHAR" property="demoName" />
+    <result column="demo_describe" jdbcType="VARCHAR" property="demoDescribe" />
+  </resultMap>
+</mapper>

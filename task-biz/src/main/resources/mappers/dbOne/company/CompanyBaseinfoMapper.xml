@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.company.CompanyBaseinfoMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.company.CompanyBaseinfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="pscode" jdbcType="VARCHAR" property="pscode" />
+    <result column="psname" jdbcType="VARCHAR" property="psname" />
+    <result column="legalPerson" jdbcType="VARCHAR" property="legalperson" />
+    <result column="pollutionAddress" jdbcType="VARCHAR" property="pollutionaddress" />
+    <result column="region" jdbcType="VARCHAR" property="region" />
+    <result column="industryType" jdbcType="VARCHAR" property="industrytype" />
+    <result column="companyType" jdbcType="VARCHAR" property="companytype" />
+    <result column="pollutionScale" jdbcType="VARCHAR" property="pollutionscale" />
+    <result column="floorSpace" jdbcType="DOUBLE" property="floorspace" />
+    <result column="pollutionType" jdbcType="VARCHAR" property="pollutiontype" />
+    <result column="is30Company" jdbcType="VARCHAR" property="is30company" />
+    <result column="commissioningDate" jdbcType="TIMESTAMP" property="commissioningdate" />
+    <result column="concernExtent" jdbcType="VARCHAR" property="concernextent" />
+    <result column="areaName" jdbcType="VARCHAR" property="areaname" />
+    <result column="drainageBasin" jdbcType="VARCHAR" property="drainagebasin" />
+    <result column="enabled" jdbcType="VARCHAR" property="enabled" />
+    <result column="isOnLine" jdbcType="VARCHAR" property="isonline" />
+    <result column="runningStatus" jdbcType="VARCHAR" property="runningstatus" />
+    <result column="contactAddress" jdbcType="VARCHAR" property="contactaddress" />
+    <result column="contactPerson" jdbcType="VARCHAR" property="contactperson" />
+    <result column="emial" jdbcType="VARCHAR" property="emial" />
+    <result column="officePhone" jdbcType="VARCHAR" property="officephone" />
+    <result column="mobilePhone" jdbcType="VARCHAR" property="mobilephone" />
+    <result column="fax" jdbcType="VARCHAR" property="fax" />
+    <result column="pollutionUrl" jdbcType="VARCHAR" property="pollutionurl" />
+    <result column="pollutionOffice" jdbcType="VARCHAR" property="pollutionoffice" />
+    <result column="pollutionPerson" jdbcType="VARCHAR" property="pollutionperson" />
+    <result column="pollutionPersonCount" jdbcType="INTEGER" property="pollutionpersoncount" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="latitude" jdbcType="DECIMAL" property="latitude" />
+    <result column="longitude" jdbcType="DECIMAL" property="longitude" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.cases.HjwfBusCaseinfoDeletedMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.cases.HjwfBusCaseinfoDeleted">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="PolSorCode" jdbcType="VARCHAR" property="polsorcode" />
+    <result column="EntID" jdbcType="VARCHAR" property="entid" />
+    <result column="CaseName" jdbcType="VARCHAR" property="casename" />
+    <result column="FilingTime" jdbcType="TIMESTAMP" property="filingtime" />
+    <result column="FK_CaseType" jdbcType="VARCHAR" property="fkCasetype" />
+    <result column="FK_IllegalType" jdbcType="VARCHAR" property="fkIllegaltype" />
+    <result column="LiAnCode" jdbcType="VARCHAR" property="liancode" />
+    <result column="CaseCode" jdbcType="VARCHAR" property="casecode" />
+    <result column="Comment" jdbcType="VARCHAR" property="comment" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updatedate" />
+    <result column="DataSource" jdbcType="VARCHAR" property="datasource" />
+    <result column="DeleteFlag" jdbcType="INTEGER" property="deleteflag" />
+    <result column="TimeTamp" jdbcType="TIMESTAMP" property="timetamp" />
+    <result column="Creater" jdbcType="VARCHAR" property="creater" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="close_time" jdbcType="TIMESTAMP" property="closeTime" />
+    <result column="dispatch_time" jdbcType="TIMESTAMP" property="dispatchTime" />
+    <result column="Modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="ModifyTime" jdbcType="DATE" property="modifytime" />
+    <result column="FK_pollutiontype" jdbcType="INTEGER" property="fkPollutiontype" />
+    <result column="FK_departmenttype" jdbcType="INTEGER" property="fkDepartmenttype" />
+    <result column="latitude" jdbcType="VARCHAR" property="latitude" />
+    <result column="Longitude" jdbcType="VARCHAR" property="longitude" />
+    <result column="location" jdbcType="VARCHAR" property="location" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="wait_operator_user_id" jdbcType="BIGINT" property="waitOperatorUserId" />
+    <result column="all_operator_user_id" jdbcType="VARCHAR" property="allOperatorUserId" />
+    <result column="is_distort" jdbcType="SMALLINT" property="isDistort" />
+    <result column="status" jdbcType="SMALLINT" property="status" />
+    <result column="Description" jdbcType="VARCHAR" property="description" />
+    <result column="netName" jdbcType="VARCHAR" property="netname" />
+    <result column="afterCaseImg" jdbcType="VARCHAR" property="aftercaseimg" />
+    <result column="handling_result" jdbcType="VARCHAR" property="handlingResult" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.cases.DwtsCodePollutiontypeMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.cases.DwtsCodePollutiontype">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pCode" jdbcType="VARCHAR" property="pcode" />
+    <result column="Comment" jdbcType="VARCHAR" property="comment" />
+    <result column="BeginTime" jdbcType="TIMESTAMP" property="begintime" />
+    <result column="EndTime" jdbcType="TIMESTAMP" property="endtime" />
+  </resultMap>
+</mapper>

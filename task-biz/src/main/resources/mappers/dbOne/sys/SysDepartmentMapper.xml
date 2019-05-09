@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.sys.SysDepartmentMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.sys.SysDepartment">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="departname" jdbcType="VARCHAR" property="departname" />
+    <result column="areacode" jdbcType="VARCHAR" property="areacode" />
+    <result column="parentid" jdbcType="INTEGER" property="parentid" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+  </resultMap>
+</mapper>

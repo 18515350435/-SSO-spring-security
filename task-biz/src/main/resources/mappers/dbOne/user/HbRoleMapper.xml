@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.user.HbRoleMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.user.HbRole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="can_edit" jdbcType="TINYINT" property="canEdit" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+  </resultMap>
+</mapper>

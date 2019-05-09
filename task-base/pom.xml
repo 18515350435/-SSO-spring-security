@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>task</groupId>
+    <artifactId>task</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  
+  <groupId>task-base</groupId>
+  <artifactId>task-base</artifactId>
+  <name>task-base</name>
+  <description>基础项目</description>
+  
+  <dependencies>
+  
+    <dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-webmvc</artifactId>
+	</dependency>
+	
+	<dependency>
+	  <groupId>org.springframework.boot</groupId>
+	  <artifactId>spring-boot</artifactId>
+	</dependency>
+	
+	<!-- redis客户端   -->
+	<dependency>
+	  <groupId>redis.clients</groupId>
+	  <artifactId>jedis</artifactId>
+	</dependency>
+	
+	<!-- java-redis驱动 -->
+	<dependency>
+	  <groupId>org.springframework.data</groupId>
+	  <artifactId>spring-data-redis</artifactId>
+	</dependency>
+	
+	<dependency>
+	  <groupId>task-model</groupId>
+	  <artifactId>task-model</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+	
+	<dependency>
+	  <groupId>task-biz</groupId>
+	  <artifactId>task-biz</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+  
+    <dependency>
+  	  <groupId>task-common</groupId>
+  	  <artifactId>task-common</artifactId>
+  	  <version>1.0.0</version>
+  	</dependency>
+  
+  </dependencies>
+  
+</project>

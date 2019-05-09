@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.sys.SysWarningvalueMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.sys.SysWarningvalue">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="pm25" jdbcType="VARCHAR" property="pm25" />
+    <result column="pm10" jdbcType="VARCHAR" property="pm10" />
+    <result column="so2" jdbcType="VARCHAR" property="so2" />
+    <result column="o3" jdbcType="VARCHAR" property="o3" />
+    <result column="no2" jdbcType="VARCHAR" property="no2" />
+    <result column="co" jdbcType="VARCHAR" property="co" />
+    <result column="inserttime" jdbcType="TIMESTAMP" property="inserttime" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+  </resultMap>
+</mapper>

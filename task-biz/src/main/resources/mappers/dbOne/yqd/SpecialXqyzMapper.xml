@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.SpecialXqyzMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.SpecialXqyz">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pollutant_discharge_id" jdbcType="VARCHAR" property="pollutantDischargeId" />
+    <result column="cun_nui" jdbcType="VARCHAR" property="cunNui" />
+    <result column="cun_zhu" jdbcType="VARCHAR" property="cunZhu" />
+    <result column="cun_ma" jdbcType="VARCHAR" property="cunMa" />
+    <result column="cun_lv" jdbcType="VARCHAR" property="cunLv" />
+    <result column="cun_luo" jdbcType="VARCHAR" property="cunLuo" />
+    <result column="cun_luotuo" jdbcType="VARCHAR" property="cunLuotuo" />
+    <result column="cun_ji" jdbcType="VARCHAR" property="cunJi" />
+    <result column="cun_ya" jdbcType="VARCHAR" property="cunYa" />
+    <result column="cun_e" jdbcType="VARCHAR" property="cunE" />
+    <result column="chu_ji" jdbcType="VARCHAR" property="chuJi" />
+    <result column="chu_ya" jdbcType="VARCHAR" property="chuYa" />
+    <result column="chu_e" jdbcType="VARCHAR" property="chuE" />
+    <result column="chu_niu" jdbcType="VARCHAR" property="chuNiu" />
+    <result column="chu_zhu" jdbcType="VARCHAR" property="chuZhu" />
+    <result column="chu_shanyang" jdbcType="VARCHAR" property="chuShanyang" />
+    <result column="chu_mianyang" jdbcType="VARCHAR" property="chuMianyang" />
+  </resultMap>
+</mapper>

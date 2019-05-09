@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.townstation.TownstationRealtimedataHistoryMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.townstation.TownstationRealtimedataHistory">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="num" jdbcType="VARCHAR" property="num" />
+    <result column="num1" jdbcType="VARCHAR" property="num1" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="lng" jdbcType="VARCHAR" property="lng" />
+    <result column="lat" jdbcType="VARCHAR" property="lat" />
+    <result column="aid" jdbcType="VARCHAR" property="aid" />
+    <result column="aname" jdbcType="VARCHAR" property="aname" />
+    <result column="pm25" jdbcType="VARCHAR" property="pm25" />
+    <result column="pm25level" jdbcType="VARCHAR" property="pm25level" />
+    <result column="so2" jdbcType="VARCHAR" property="so2" />
+    <result column="so2level" jdbcType="VARCHAR" property="so2level" />
+    <result column="date" jdbcType="VARCHAR" property="date" />
+    <result column="maxdate" jdbcType="VARCHAR" property="maxdate" />
+    <result column="insertdate" jdbcType="VARCHAR" property="insertdate" />
+  </resultMap>
+  <insert id="insertByBatch" parameterType="java.util.List" >
+    INSERT INTO `townstation_realtimedata_history` (`id`, `num`, `num1`, `title`, `lng`, `lat`, `aid`, `aname`, `pm25`, `pm25level`, `so2`, `so2level`, `date`, `maxdate`,`insertdate`)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (#{item.id,jdbcType=VARCHAR},
+      #{item.num,jdbcType=VARCHAR},
+      #{item.num1,jdbcType=VARCHAR},
+      #{item.title,jdbcType=VARCHAR},
+      #{item.lng,jdbcType=VARCHAR},
+      #{item.lat,jdbcType=VARCHAR},
+      #{item.aid,jdbcType=VARCHAR},
+      #{item.aname,jdbcType=VARCHAR},
+      #{item.pm25,jdbcType=VARCHAR},
+      #{item.pm25level,jdbcType=VARCHAR},
+      #{item.so2,jdbcType=VARCHAR},
+      #{item.so2level,jdbcType=VARCHAR},
+      #{item.date,jdbcType=VARCHAR},
+      #{item.maxdate,jdbcType=VARCHAR},
+      #{item.insertdate,jdbcType=VARCHAR})
+    </foreach>
+  </insert>
+</mapper>

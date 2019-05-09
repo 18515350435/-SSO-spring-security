@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.user.HbPermissionMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.user.HbPermission">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="permission_url" jdbcType="VARCHAR" property="permissionUrl" />
+    <result column="orderflag" jdbcType="VARCHAR" property="orderflag" />
+    <result column="permission_name" jdbcType="VARCHAR" property="permissionName" />
+    <result column="level" jdbcType="TINYINT" property="level" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+  </resultMap>
+</mapper>

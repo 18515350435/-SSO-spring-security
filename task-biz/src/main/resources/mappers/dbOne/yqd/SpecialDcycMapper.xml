@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.SpecialDcycMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.SpecialDcyc">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pollutant_discharge_id" jdbcType="VARCHAR" property="pollutantDischargeId" />
+    <result column="dclx" jdbcType="VARCHAR" property="dclx" />
+    <result column="qtdclx" jdbcType="VARCHAR" property="qtdclx" />
+    <result column="dccl" jdbcType="VARCHAR" property="dccl" />
+    <result column="qtdccl" jdbcType="VARCHAR" property="qtdccl" />
+    <result column="tlgy" jdbcType="VARCHAR" property="tlgy" />
+    <result column="tlxl" jdbcType="VARCHAR" property="tlxl" />
+    <result column="txgy" jdbcType="VARCHAR" property="txgy" />
+    <result column="txxl" jdbcType="VARCHAR" property="txxl" />
+    <result column="ccgy" jdbcType="VARCHAR" property="ccgy" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.company.CompanyPointMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.company.CompanyPoint">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="pscode" jdbcType="VARCHAR" property="pscode" />
+    <result column="psname" jdbcType="VARCHAR" property="psname" />
+    <result column="regionname" jdbcType="VARCHAR" property="regionname" />
+    <result column="industrytypename" jdbcType="VARCHAR" property="industrytypename" />
+    <result column="psaddress" jdbcType="VARCHAR" property="psaddress" />
+    <result column="outputcode" jdbcType="INTEGER" property="outputcode" />
+    <result column="outputname" jdbcType="VARCHAR" property="outputname" />
+    <result column="latitude" jdbcType="DOUBLE" property="latitude" />
+    <result column="longitude" jdbcType="DOUBLE" property="longitude" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="legalPerson" jdbcType="VARCHAR" property="legalperson" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="delete" jdbcType="BIT" property="delete" />
+    <result column="Id" jdbcType="LONGVARCHAR" property="id" />
+  </resultMap>
+</mapper>

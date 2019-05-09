@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.electric.ElectricinfoMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.electric.Electricinfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="Id" jdbcType="VARCHAR" property="id" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="ga" jdbcType="VARCHAR" property="ga" />
+    <result column="ac" jdbcType="VARCHAR" property="ac" />
+    <result column="kf" jdbcType="VARCHAR" property="kf" />
+    <result column="gy" jdbcType="VARCHAR" property="gy" />
+    <result column="yq" jdbcType="VARCHAR" property="yq" />
+    <result column="xh" jdbcType="VARCHAR" property="xh" />
+    <result column="dcheng" jdbcType="VARCHAR" property="dcheng" />
+    <result column="wa" jdbcType="VARCHAR" property="wa" />
+    <result column="dchang" jdbcType="VARCHAR" property="dchang" />
+    <result column="bz" jdbcType="VARCHAR" property="bz" />
+    <result column="sh" jdbcType="VARCHAR" property="sh" />
+  </resultMap>
+</mapper>

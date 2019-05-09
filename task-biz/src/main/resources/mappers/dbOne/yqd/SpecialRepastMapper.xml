@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.SpecialRepastMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.SpecialRepast">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pollutant_discharge_id" jdbcType="VARCHAR" property="pollutantDischargeId" />
+    <result column="purification_facility" jdbcType="VARCHAR" property="purificationFacility" />
+    <result column="removal_efficiency" jdbcType="VARCHAR" property="removalEfficiency" />
+    <result column="fuel_type" jdbcType="VARCHAR" property="fuelType" />
+    <result column="annual_usage" jdbcType="VARCHAR" property="annualUsage" />
+  </resultMap>
+</mapper>

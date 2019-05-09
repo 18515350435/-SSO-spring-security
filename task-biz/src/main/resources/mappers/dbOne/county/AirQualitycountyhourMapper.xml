@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.county.AirQualitycountyhourMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.county.AirQualitycountyhour">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="Id" jdbcType="CHAR" property="id" />
+    <result column="GridCode" jdbcType="VARCHAR" property="gridcode" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="aqi" jdbcType="INTEGER" property="aqi" />
+    <result column="pm2_5" jdbcType="INTEGER" property="pm25" />
+    <result column="pm10" jdbcType="INTEGER" property="pm10" />
+    <result column="so2" jdbcType="INTEGER" property="so2" />
+    <result column="no2" jdbcType="INTEGER" property="no2" />
+    <result column="co" jdbcType="DOUBLE" property="co" />
+    <result column="o3" jdbcType="INTEGER" property="o3" />
+    <result column="AQIStatus" jdbcType="CHAR" property="aqistatus" />
+    <result column="PM25Status" jdbcType="CHAR" property="pm25status" />
+    <result column="PM10Status" jdbcType="CHAR" property="pm10status" />
+    <result column="SO2Status" jdbcType="CHAR" property="so2status" />
+    <result column="NO2Status" jdbcType="CHAR" property="no2status" />
+    <result column="COStatus" jdbcType="CHAR" property="costatus" />
+    <result column="O3Status" jdbcType="CHAR" property="o3status" />
+    <result column="mainpoll" jdbcType="VARCHAR" property="mainpoll" />
+    <result column="ComplexIndex" jdbcType="DOUBLE" property="complexindex" />
+    <result column="quality" jdbcType="VARCHAR" property="quality" />
+    <result column="hourRankInCity" jdbcType="INTEGER" property="hourrankincity" />
+    <result column="houraqi" jdbcType="INTEGER" property="houraqi" />
+    <result column="hourrank_74" jdbcType="INTEGER" property="hourrank74" />
+    <result column="dayindex" jdbcType="DOUBLE" property="dayindex" />
+    <result column="dayrank_74" jdbcType="INTEGER" property="dayrank74" />
+    <result column="monthindex" jdbcType="DOUBLE" property="monthindex" />
+    <result column="monthrank_74" jdbcType="INTEGER" property="monthrank74" />
+    <result column="yearindex" jdbcType="DOUBLE" property="yearindex" />
+    <result column="yearrank_74" jdbcType="INTEGER" property="yearrank74" />
+    <result column="lastyear_dayindex" jdbcType="DOUBLE" property="lastyearDayindex" />
+    <result column="lastyear_dayrank" jdbcType="INTEGER" property="lastyearDayrank" />
+    <result column="lastyear_monthindex" jdbcType="DOUBLE" property="lastyearMonthindex" />
+    <result column="lastyear_monthrank" jdbcType="INTEGER" property="lastyearMonthrank" />
+    <result column="lastyear_yearindex" jdbcType="DOUBLE" property="lastyearYearindex" />
+    <result column="lastyear_yearrank" jdbcType="INTEGER" property="lastyearYearrank" />
+  </resultMap>
+  <insert id="insertHour" parameterType="java.util.List">
+    INSERT INTO `air_qualitycountyhour` (`Id`,`GridCode`,`time`,`CreateTime`,`aqi`,`pm2_5`,`pm10`,`so2`,`no2`,`co`,
+    `o3`,`ComplexIndex`,`mainpoll`)
+    values
+    <foreach collection="list" index="index" item="item" separator=",">
+      (#{item.id,jdbcType=CHAR},
+      #{item.gridcode,jdbcType=VARCHAR},
+      #{item.time,jdbcType=TIMESTAMP},
+      #{item.createtime,jdbcType=TIMESTAMP},
+      #{item.aqi,jdbcType=INTEGER},
+      #{item.pm25,jdbcType=INTEGER},
+      #{item.pm10,jdbcType=INTEGER},
+      #{item.so2,jdbcType=INTEGER},
+      #{item.no2,jdbcType=INTEGER},
+      #{item.co,jdbcType=DOUBLE},
+      #{item.o3,jdbcType=INTEGER},
+      #{item.complexindex,jdbcType=DOUBLE},
+      #{item.mainpoll,jdbcType=VARCHAR}
+      )
+    </foreach>
+  </insert>
+</mapper>

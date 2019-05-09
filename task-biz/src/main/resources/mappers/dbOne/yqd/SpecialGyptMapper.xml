@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.SpecialGyptMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.SpecialGypt">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pollutant_discharge_id" jdbcType="VARCHAR" property="pollutantDischargeId" />
+    <result column="ptgx" jdbcType="VARCHAR" property="ptgx" />
+    <result column="rjlx" jdbcType="VARCHAR" property="rjlx" />
+    <result column="rjxz" jdbcType="VARCHAR" property="rjxz" />
+    <result column="tlnyl" jdbcType="VARCHAR" property="tlnyl" />
+    <result column="xsjnyl" jdbcType="VARCHAR" property="xsjnyl" />
+    <result column="outlet_height" jdbcType="VARCHAR" property="outletHeight" />
+    <result column="outlet_diameter" jdbcType="VARCHAR" property="outletDiameter" />
+    <result column="is_pollution_sources_guo" jdbcType="VARCHAR" property="isPollutionSourcesGuo" />
+    <result column="is_do_online_monitor" jdbcType="VARCHAR" property="isDoOnlineMonitor" />
+    <result column="is_pollution_sources_sheng" jdbcType="VARCHAR" property="isPollutionSourcesSheng" />
+    <result column="is_pollution_sources_shi" jdbcType="VARCHAR" property="isPollutionSourcesShi" />
+    <result column="is_online_monitor" jdbcType="VARCHAR" property="isOnlineMonitor" />
+    <result column="is_video_monitor" jdbcType="VARCHAR" property="isVideoMonitor" />
+  </resultMap>
+</mapper>

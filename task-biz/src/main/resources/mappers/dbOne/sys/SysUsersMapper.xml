@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.sys.SysUsersMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.sys.SysUsers">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="loginname" jdbcType="VARCHAR" property="loginname" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="photo" jdbcType="VARCHAR" property="photo" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="departid" jdbcType="INTEGER" property="departid" />
+    <result column="areacode" jdbcType="VARCHAR" property="areacode" />
+    <result column="isadmin" jdbcType="INTEGER" property="isadmin" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+  </resultMap>
+</mapper>

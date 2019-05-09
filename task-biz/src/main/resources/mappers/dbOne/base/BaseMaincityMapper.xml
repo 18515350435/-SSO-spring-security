@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.base.BaseMaincityMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.base.BaseMaincity">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="CityCode" jdbcType="VARCHAR" property="citycode" />
+    <result column="CityName" jdbcType="VARCHAR" property="cityname" />
+    <result column="SimpleCityName" jdbcType="VARCHAR" property="simplecityname" />
+    <result column="ParentCode" jdbcType="VARCHAR" property="parentcode" />
+    <result column="Province" jdbcType="VARCHAR" property="province" />
+    <result column="Level" jdbcType="VARCHAR" property="level" />
+    <result column="QPhoneNum" jdbcType="VARCHAR" property="qphonenum" />
+    <result column="PostCode" jdbcType="VARCHAR" property="postcode" />
+    <result column="Spell" jdbcType="VARCHAR" property="spell" />
+    <result column="GLon" jdbcType="DOUBLE" property="glon" />
+    <result column="Glat" jdbcType="DOUBLE" property="glat" />
+    <result column="IsJjjAnd226City" jdbcType="BIT" property="isjjjand226city" />
+    <result column="Is226City" jdbcType="BIT" property="is226city" />
+    <result column="IsJjjCity" jdbcType="BIT" property="isjjjcity" />
+    <result column="Is74City" jdbcType="BIT" property="is74city" />
+    <result column="Is169City" jdbcType="BIT" property="is169city" />
+    <result column="Is338City" jdbcType="BIT" property="is338city" />
+    <result column="Blon" jdbcType="DOUBLE" property="blon" />
+    <result column="Blat" jdbcType="DOUBLE" property="blat" />
+    <result column="Id" jdbcType="LONGVARCHAR" property="id" />
+  </resultMap>
+</mapper>

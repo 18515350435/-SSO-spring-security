@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.SpecialQthxMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.SpecialQthx">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pollutant_discharge_id" jdbcType="VARCHAR" property="pollutantDischargeId" />
+    <result column="boilers_number" jdbcType="VARCHAR" property="boilersNumber" />
+    <result column="total_ton" jdbcType="VARCHAR" property="totalTon" />
+    <result column="product_gongyi" jdbcType="VARCHAR" property="productGongyi" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="product_type" jdbcType="VARCHAR" property="productType" />
+    <result column="product_production" jdbcType="VARCHAR" property="productProduction" />
+    <result column="tlgy" jdbcType="VARCHAR" property="tlgy" />
+    <result column="tlxl" jdbcType="VARCHAR" property="tlxl" />
+    <result column="txgy" jdbcType="VARCHAR" property="txgy" />
+    <result column="txxl" jdbcType="VARCHAR" property="txxl" />
+    <result column="ccgy" jdbcType="VARCHAR" property="ccgy" />
+    <result column="ccxl" jdbcType="VARCHAR" property="ccxl" />
+    <result column="vocgy" jdbcType="VARCHAR" property="vocgy" />
+    <result column="vochs" jdbcType="VARCHAR" property="vochs" />
+    <result column="outlet_height" jdbcType="VARCHAR" property="outletHeight" />
+    <result column="outlet_diameter" jdbcType="VARCHAR" property="outletDiameter" />
+    <result column="is_pollution_sources_guo" jdbcType="VARCHAR" property="isPollutionSourcesGuo" />
+    <result column="is_do_online_monitor" jdbcType="VARCHAR" property="isDoOnlineMonitor" />
+    <result column="is_pollution_sources_sheng" jdbcType="VARCHAR" property="isPollutionSourcesSheng" />
+    <result column="is_pollution_sources_shi" jdbcType="VARCHAR" property="isPollutionSourcesShi" />
+    <result column="is_online_monitor" jdbcType="VARCHAR" property="isOnlineMonitor" />
+    <result column="is_video_monitor" jdbcType="VARCHAR" property="isVideoMonitor" />
+  </resultMap>
+</mapper>

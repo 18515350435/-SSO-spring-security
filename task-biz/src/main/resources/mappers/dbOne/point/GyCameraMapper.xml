@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.point.GyCameraMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.point.GyCamera">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="company_id" jdbcType="VARCHAR" property="companyId" />
+    <result column="flow_code" jdbcType="VARCHAR" property="flowCode" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="device_code" jdbcType="VARCHAR" property="deviceCode" />
+    <result column="camera_code" jdbcType="VARCHAR" property="cameraCode" />
+    <result column="channel_code" jdbcType="VARCHAR" property="channelCode" />
+    <result column="device_type" jdbcType="VARCHAR" property="deviceType" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="camera_type" jdbcType="VARCHAR" property="cameraType" />
+    <result column="longitude" jdbcType="DECIMAL" property="longitude" />
+    <result column="latitude" jdbcType="DECIMAL" property="latitude" />
+    <result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="area_code" jdbcType="VARCHAR" property="areaCode" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+  </resultMap>
+</mapper>

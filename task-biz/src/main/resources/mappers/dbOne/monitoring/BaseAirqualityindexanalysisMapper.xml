@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.monitoring.BaseAirqualityindexanalysisMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.monitoring.BaseAirqualityindexanalysis">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="Id" jdbcType="INTEGER" property="id" />
+    <result column="MinValue" jdbcType="DOUBLE" property="minvalue" />
+    <result column="MaxValue" jdbcType="DOUBLE" property="maxvalue" />
+    <result column="Quality" jdbcType="VARCHAR" property="quality" />
+    <result column="StatusCode" jdbcType="VARCHAR" property="statuscode" />
+    <result column="IndexTypeCode" jdbcType="VARCHAR" property="indextypecode" />
+    <result column="Sys_Delete" jdbcType="TINYINT" property="sysDelete" />
+  </resultMap>
+
+  <select id="getAlllist" resultMap="BaseResultMap">
+    SELECT Id,MinValue,`MaxValue`,Quality,StatusCode,IndexTypeCode,Sys_Delete FROM base_airqualityindexanalysis
+  </select>
+</mapper>

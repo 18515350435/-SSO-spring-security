@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.airquality.AirQualitydayMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.airquality.AirQualityday">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="Id" jdbcType="VARCHAR" property="id" />
+    <result column="Area" jdbcType="VARCHAR" property="area" />
+    <result column="Aqi" jdbcType="INTEGER" property="aqi" />
+    <result column="Quality" jdbcType="VARCHAR" property="quality" />
+    <result column="Primarypollutant" jdbcType="VARCHAR" property="primarypollutant" />
+    <result column="So2" jdbcType="INTEGER" property="so2" />
+    <result column="CO" jdbcType="DECIMAL" property="co" />
+    <result column="No2" jdbcType="INTEGER" property="no2" />
+    <result column="O3" jdbcType="INTEGER" property="o3" />
+    <result column="Pm10" jdbcType="INTEGER" property="pm10" />
+    <result column="Pm25" jdbcType="INTEGER" property="pm25" />
+    <result column="CityCode" jdbcType="VARCHAR" property="citycode" />
+    <result column="Measure" jdbcType="VARCHAR" property="measure" />
+    <result column="Unheathful" jdbcType="VARCHAR" property="unheathful" />
+    <result column="Com_Index" jdbcType="DECIMAL" property="comIndex" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="PKID" jdbcType="VARCHAR" property="pkid" />
+  </resultMap>
+  <insert id="insertByBatch" parameterType="java.util.List">
+    INSERT INTO `air_qualityday` (`Id`, `Area`, `Aqi`, `Quality`, `Primarypollutant`, `So2`, `Co`, `No2`, `O3`,`Pm10`,`pm25`,`CityCode`,`Measure`,`Unheathful`,`Com_Index`,`PKID`,`TimePoint`,`CreateTime`)
+    values
+    <foreach collection="list" index="index" item="item" separator=",">
+      (#{item.id,jdbcType=VARCHAR},
+      #{item.area,jdbcType=VARCHAR},
+      #{item.aqi,jdbcType=INTEGER},
+      #{item.quality,jdbcType=VARCHAR},
+      #{item.primarypollutant,jdbcType=VARCHAR},
+      #{item.so2,jdbcType=INTEGER},
+      #{item.co,jdbcType=INTEGER},
+      #{item.no2,jdbcType=INTEGER},
+      #{item.o3,jdbcType=DECIMAL},
+      #{item.pm10,jdbcType=INTEGER},
+      #{item.pm25,jdbcType=INTEGER},
+      #{item.citycode,jdbcType=VARCHAR},
+      #{item.measure,jdbcType=VARCHAR},
+      #{item.unheathful,jdbcType=VARCHAR},
+      #{item.comIndex,jdbcType=DECIMAL},
+      #{item.pkid,jdbcType=VARCHAR},
+      #{item.timepoint,jdbcType=TIMESTAMP},
+      #{item.createtime,jdbcType=TIMESTAMP})
+    </foreach>
+  </insert>
+</mapper>

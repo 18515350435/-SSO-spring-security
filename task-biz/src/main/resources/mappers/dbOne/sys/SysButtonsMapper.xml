@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.sys.SysButtonsMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.sys.SysButtons">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="buttonname" jdbcType="VARCHAR" property="buttonname" />
+    <result column="methodname" jdbcType="VARCHAR" property="methodname" />
+    <result column="iconurl" jdbcType="VARCHAR" property="iconurl" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="position" jdbcType="INTEGER" property="position" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+  </resultMap>
+</mapper>

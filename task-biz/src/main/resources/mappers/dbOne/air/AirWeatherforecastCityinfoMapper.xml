@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.air.AirWeatherforecastCityinfoMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.air.AirWeatherforecastCityinfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="cityname" jdbcType="VARCHAR" property="cityname" />
+    <result column="citypinyin" jdbcType="VARCHAR" property="citypinyin" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="lat" jdbcType="VARCHAR" property="lat" />
+    <result column="lon" jdbcType="VARCHAR" property="lon" />
+  </resultMap>
+</mapper>

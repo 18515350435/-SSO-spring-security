@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.schedule.SystemScheduleMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.schedule.SystemSchedule">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="Id" jdbcType="VARCHAR" property="id" />
+    <result column="UserId" jdbcType="BIGINT" property="userid" />
+    <result column="SendId" jdbcType="BIGINT" property="sendid" />
+    <result column="Title" jdbcType="VARCHAR" property="title" />
+    <result column="SendTime" jdbcType="TIMESTAMP" property="sendtime" />
+    <result column="Content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>

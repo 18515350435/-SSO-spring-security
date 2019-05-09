@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.air.AirQualityjinghaicountyhourMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.air.AirQualityjinghaicountyhour">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="areaname" jdbcType="VARCHAR" property="areaname" />
+    <result column="so2" jdbcType="REAL" property="so2" />
+    <result column="no2" jdbcType="REAL" property="no2" />
+    <result column="co" jdbcType="REAL" property="co" />
+    <result column="pm25" jdbcType="REAL" property="pm25" />
+    <result column="pm10" jdbcType="REAL" property="pm10" />
+    <result column="o3" jdbcType="REAL" property="o3" />
+    <result column="so2_24h" jdbcType="REAL" property="so224h" />
+    <result column="no2_24h" jdbcType="REAL" property="no224h" />
+    <result column="co_24h" jdbcType="REAL" property="co24h" />
+    <result column="pm25_24h" jdbcType="REAL" property="pm2524h" />
+    <result column="pm10_24h" jdbcType="REAL" property="pm1024h" />
+    <result column="o3_8h" jdbcType="REAL" property="o38h" />
+    <result column="aqi" jdbcType="REAL" property="aqi" />
+    <result column="level" jdbcType="INTEGER" property="level" />
+    <result column="mainpoll" jdbcType="VARCHAR" property="mainpoll" />
+    <result column="monitortime" jdbcType="TIMESTAMP" property="monitortime" />
+    <result column="inserttime" jdbcType="TIMESTAMP" property="inserttime" />
+  </resultMap>
+  <insert id="insertByBatch" parameterType="java.util.List" >
+    INSERT INTO `air_qualityjinghaicountyhour` (`id`, `areaname`, `so2`, `no2`, `co`, `pm25`, `pm10`, `o3`, `so2_24h`, `no2_24h`, `co_24h`,
+    `pm25_24h`, `pm10_24h`, `o3_8h`, `aqi`, `level`, `mainpoll`, `monitortime`, `inserttime`)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (#{item.id,jdbcType=VARCHAR},
+      #{item.areaname,jdbcType=VARCHAR},
+      #{item.so2,jdbcType=REAL},
+      #{item.no2,jdbcType=REAL},
+      #{item.co,jdbcType=REAL},
+      #{item.pm25,jdbcType=REAL},
+      #{item.pm10,jdbcType=REAL},
+      #{item.o3,jdbcType=REAL},
+      #{item.so224h,jdbcType=REAL},
+      #{item.no224h,jdbcType=REAL},
+      #{item.co24h,jdbcType=REAL},
+      #{item.pm2524h,jdbcType=REAL},
+      #{item.pm1024h,jdbcType=REAL},
+      #{item.o38h,jdbcType=REAL},
+      #{item.aqi,jdbcType=REAL},
+      #{item.level,jdbcType=INTEGER},
+      #{item.mainpoll,jdbcType=VARCHAR},
+      #{item.monitortime,jdbcType=TIMESTAMP},
+      #{item.inserttime,jdbcType=TIMESTAMP}
+      )
+    </foreach>
+  </insert>
+</mapper>

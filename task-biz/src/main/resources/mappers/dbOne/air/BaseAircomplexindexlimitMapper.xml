@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.air.BaseAircomplexindexlimitMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.air.BaseAircomplexindexlimit">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="Id" jdbcType="CHAR" property="id" />
+    <result column="SO2" jdbcType="INTEGER" property="so2" />
+    <result column="NO2" jdbcType="INTEGER" property="no2" />
+    <result column="CO" jdbcType="INTEGER" property="co" />
+    <result column="O3" jdbcType="INTEGER" property="o3" />
+    <result column="PM10" jdbcType="INTEGER" property="pm10" />
+    <result column="PM2.5" jdbcType="INTEGER" property="pm2.5" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zc.biz.dao.mappers.dbOne.yqd.SpecialGasStationMapper">
+  <resultMap id="BaseResultMap" type="com.zc.biz.dao.models.dbOne.yqd.SpecialGasStation">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pollutant_discharge_id" jdbcType="VARCHAR" property="pollutantDischargeId" />
+    <result column="gasoline_sales" jdbcType="VARCHAR" property="gasolineSales" />
+    <result column="diesel_sales" jdbcType="VARCHAR" property="dieselSales" />
+    <result column="recovery_method" jdbcType="VARCHAR" property="recoveryMethod" />
+    <result column="online_monitoring" jdbcType="VARCHAR" property="onlineMonitoring" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,64 @@
+
+server:
+  port: 55100
+
+log:
+  level: debug
+  path: /logs/task/task-beta.log
+    
+spring:
+  datasource01:
+    url: jdbc:mysql://192.168.108.160:8066/task?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: mycat
+    password: shiyuetyi!
+    driver-class-name: com.mysql.jdbc.Driver
+    validationQuery: select 1
+    testOnBorrow: true
+    testOnReturn: true
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+  datasource02:
+    url: jdbc:mysql://192.168.108.160:8066/task?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: mycat
+    password: shiyueyi!
+    driver-class-name: com.mysql.jdbc.Driver
+    validationQuery: select 1
+    testOnBorrow: true
+    testOnReturn: true
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+  redis:
+    hostName: 192.168.108.215
+    port: 6379
+    password: $C9UTe3zKOvc@QAE
+    maxTotal: 50         # 最大连接数
+    maxIdle: 10          # 最大空闲连接数
+    minIdle: 5           # 最小空闲连接数
+    maxWaitMillis: 1000  # 最大超时毫秒
+
+webservice:
+  passportService:
+    remoteUrl: http://svc.pas2.zc.com/PassportService.svc?wsdl
+    userInfoByPasIdMethedName: http://tempuri.org/IPassportService/PassPortById
+    serviceCardBindingMethedName: http://tempuri.org/IPassportService/ServiceCardBinding
+  
+m:
+  openid:
+    authUrl: http://testpassport.zc.com/m/Gateway/Authorize
+  protector:
+    key: B7RylWwyaUlz8ZA7y4EJF2AWc2KXfxe8
+  sso:
+    loginUrl: http://testpassport.zc.com/m/Account/Login
+  csi:
+    bindingUrl: http://testpassport.zc.com/m/Account/BindingHealth
+    
+# 二维码传递的内容    
+qRcodeTest: https://devo2o.zc.com/fdswx/index.html#/homeDocAdd/homeDocSign
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        host: devo2o.zc.com

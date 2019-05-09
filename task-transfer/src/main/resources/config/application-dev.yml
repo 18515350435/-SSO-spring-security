@@ -1,0 +1,80 @@
+
+server:
+  port: 8079
+
+#日志输出配置
+log:
+  level: debug #日志级别
+  path: /crawlerlog/task.log # 最前面加/为绝对路径
+
+spring:
+  datasource01:
+    url: jdbc:mysql://120.52.157.161:3306/crawlerforall?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: zhicheng
+    driver-class-name: com.mysql.jdbc.Driver
+    validationQuery: select 1
+    testOnBorrow: true
+    testOnReturn: true
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+#  datasource01:
+#    url: jdbc:mysql://10.6.80.94:3306/task?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+#    username: root
+#    password: tecom@123
+#    driver-class-name: com.mysql.jdbc.Driver
+#    validationQuery: select 1
+#    testOnBorrow: true
+#    testOnReturn: true
+#    testWhileIdle: true
+#    timeBetweenEvictionRunsMillis: 60000
+#    minEvictableIdleTimeMillis: 300000
+  datasource02:
+    url: jdbc:mysql://10.6.80.94:3306/task02?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: tecom@123
+    driver-class-name: com.mysql.jdbc.Driver
+    validationQuery: select 1
+    testOnBorrow: true
+    testOnReturn: true
+    testWhileIdle: true
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+  redis:
+    # 10.6.80.94 127.0.0.1
+    hostName: 10.6.80.94
+    port: 6379
+    password: 1q2w3e4r5tASDFG
+    maxTotal: 50         # 最大连接数
+    maxIdle: 10          # 最大空闲连接数
+    minIdle: 5           # 最小空闲连接数
+    maxWaitMillis: 1000  # 最大超时毫秒
+
+webservice:
+  passportService:
+    remoteUrl: http://svc.pas2.zc.com/PassportService.svc?wsdl
+    userInfoByPasIdMethedName: http://tempuri.org/IPassportService/PassPortById
+    serviceCardBindingMethedName: http://tempuri.org/IPassportService/ServiceCardBinding
+
+m:
+  openid:
+    authUrl: http://testpassport.zc.com/m/Gateway/Authorize
+  protector:
+    key: B7RylWwyaUlz8ZA7y4EJF2AWc2KXfxe8
+  sso:
+    loginUrl: http://testpassport.zc.com/m/Account/Login
+  csi:
+    bindingUrl: http://testpassport.zc.com/m/Account/BindingHealth
+
+# 二维码传递的内容
+qRcodeTest: https://devo2o.zc.com/fdswx/index.html#/homeDocAdd/homeDocSign
+springfox:
+  documentation:
+    swagger:
+      v2:
+        host: 175.25.241.181:8073
+
+myfileserver:
+  localPath: D:/Hb/Image/javaimg/
+  url: http://192.168.30.243:8070/javaimg/
